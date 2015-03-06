@@ -1,0 +1,39 @@
+comment "Exported from Arsenal by iisha";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_Competitor";
+this addVest "V_Press_F";
+for "_i" from 1 to 2 do {this addItemToVest "40Rnd_mas_46x30_Mag";};
+this addItemToVest "11Rnd_45ACP_Mag";
+this addItemToVest "Chemlight_green";
+this addItemToVest "Chemlight_red";
+this addItemToVest "SmokeShell";
+this addHeadgear "H_Cap_marshal";
+this addGoggles "G_Aviator";
+
+comment "Add weapons";
+this addWeapon "hgun_mas_mp7_F";
+this addPrimaryWeaponItem "muzzle_mas_snds_MP7";
+this addPrimaryWeaponItem "acc_flashlight";
+this addPrimaryWeaponItem "optic_ACO_grn";
+this addWeapon "hgun_Pistol_heavy_01_F";
+this addHandgunItem "AGM_muzzle_mzls_smg_01";
+this addHandgunItem "optic_MRD";
+this addWeapon "Laserdesignator";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "tf_anprc152_20";
+this linkItem "ItemGPS";
