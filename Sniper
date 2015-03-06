@@ -1,0 +1,42 @@
+comment "Exported from Arsenal by iisha";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_B_GhillieSuit";
+for "_i" from 1 to 2 do {this addItemToUniform "7Rnd_408_Mag";};
+this addItemToUniform "Laserbatteries";
+this addVest "V_PlateCarrierGL_rgr";
+for "_i" from 1 to 2 do {this addItemToVest "AGM_Bandage";};
+this addItemToVest "optic_Arco";
+this addItemToVest "optic_SOS";
+this addItemToVest "AGM_EarBuds";
+for "_i" from 1 to 6 do {this addItemToVest "11Rnd_45ACP_Mag";};
+for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
+for "_i" from 1 to 2 do {this addItemToVest "7Rnd_408_Mag";};
+this addHeadgear "H_HelmetB";
+
+comment "Add weapons";
+this addWeapon "srifle_LRR_camo_F";
+this addPrimaryWeaponItem "optic_Nightstalker";
+this addWeapon "hgun_Pistol_heavy_01_F";
+this addHandgunItem "muzzle_snds_acp";
+this addHandgunItem "optic_MRD";
+this addWeapon "Laserdesignator";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "tf_anprc152_6";
+this linkItem "ItemGPS";
+this linkItem "NVGoggles_INDEP";

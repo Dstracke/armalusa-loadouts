@@ -1,0 +1,45 @@
+comment "Exported from Arsenal by iisha";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_B_CombatUniform_mcam_tshirt";
+for "_i" from 1 to 2 do {this addItemToUniform "AGM_CableTie";};
+this addItemToUniform "11Rnd_45ACP_Mag";
+this addItemToUniform "HandGrenade";
+this addItemToUniform "Laserbatteries";
+this addVest "V_PlateCarrierGL_rgr";
+this addItemToVest "HandGrenade";
+for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
+for "_i" from 1 to 3 do {this addItemToVest "11Rnd_45ACP_Mag";};
+this addItemToVest "200Rnd_mas_556x45_Stanag";
+this addBackpack "B_AssaultPack_mcamo";
+this addItemToBackpack "AGM_EarBuds";
+for "_i" from 1 to 2 do {this addItemToBackpack "AGM_Bandage";};
+for "_i" from 1 to 2 do {this addItemToBackpack "200Rnd_mas_556x45_T_Stanag";};
+for "_i" from 1 to 2 do {this addItemToBackpack "200Rnd_mas_556x45_Stanag";};
+this addHeadgear "H_HelmetB";
+
+comment "Add weapons";
+this addWeapon "LMG_mas_M249a_F";
+this addPrimaryWeaponItem "optic_mas_Arco_blk";
+this addWeapon "hgun_Pistol_heavy_01_F";
+this addHandgunItem "muzzle_snds_acp";
+this addHandgunItem "optic_MRD";
+this addWeapon "Laserdesignator";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "tf_anprc152_9";
+this linkItem "ItemGPS";
+this linkItem "NVGoggles_INDEP";

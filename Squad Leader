@@ -1,0 +1,58 @@
+comment "Exported from Arsenal by iisha";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_B_CombatUniform_mcam_tshirt";
+for "_i" from 1 to 2 do {this addItemToUniform "AGM_CableTie";};
+for "_i" from 1 to 2 do {this addItemToUniform "AGM_Bandage";};
+this addItemToUniform "HandGrenade";
+this addItemToUniform "11Rnd_45ACP_Mag";
+this addItemToUniform "1Rnd_HE_Grenade_shell";
+this addItemToUniform "Laserbatteries";
+this addVest "V_PlateCarrierGL_rgr";
+for "_i" from 1 to 8 do {this addItemToVest "30Rnd_556x45_Stanag";};
+for "_i" from 1 to 2 do {this addItemToVest "30Rnd_556x45_Stanag_Tracer_Green";};
+for "_i" from 1 to 8 do {this addItemToVest "1Rnd_HE_Grenade_shell";};
+this addItemToVest "HandGrenade";
+for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
+for "_i" from 1 to 2 do {this addItemToVest "SUPER_flash";};
+this addItemToVest "SmokeShellRed";
+this addItemToVest "SmokeShellGreen";
+this addItemToVest "11Rnd_45ACP_Mag";
+this addBackpack "tf_rt1523g_sage";
+this addItemToBackpack "AGM_EarBuds";
+this addItemToBackpack "optic_ACO_grn";
+for "_i" from 1 to 2 do {this addItemToBackpack "11Rnd_45ACP_Mag";};
+this addHeadgear "H_HelmetB";
+this addGoggles "G_Aviator";
+
+comment "Add weapons";
+this addWeapon "arifle_mas_hk416_m203";
+this addPrimaryWeaponItem "muzzle_snds_M";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "optic_Hamr";
+this addWeapon "hgun_Pistol_heavy_01_F";
+this addHandgunItem "muzzle_snds_acp";
+this addHandgunItem "optic_MRD";
+this addWeapon "Laserdesignator";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "tf_anprc152_4";
+this linkItem "ItemGPS";
+this linkItem "NVGoggles_INDEP";
+
+comment "Set identity";
+this setFace "WhiteHead_17";
+this setSpeaker "AGM_NoVoice";

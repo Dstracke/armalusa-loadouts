@@ -1,0 +1,2 @@
+# Register call for an item to open the Arsenal.
+["AmmoboxInit",[_this,true]] call BIS_fnc_arsenal;
