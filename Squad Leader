@@ -52,7 +52,3 @@ this linkItem "ItemWatch";
 this linkItem "tf_anprc152_4";
 this linkItem "ItemGPS";
 this linkItem "NVGoggles_INDEP";
-
-comment "Set identity";
-this setFace "WhiteHead_17";
-this setSpeaker "AGM_NoVoice";
