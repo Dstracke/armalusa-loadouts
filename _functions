@@ -1,2 +1,2 @@
 # Register call for an item to open the Arsenal.
-["AmmoboxInit",[_this,true]] call BIS_fnc_arsenal;
+0 = ["AmmoboxInit",[this,true]] spawn BIS_fnc_arsenal;
