@@ -1,4 +1,4 @@
-comment "Exported from Arsenal by iisha";
+comment "Exported from Arsenal by iisha. No NATO weapons mod required.";
 
 comment "Remove existing items";
 removeAllWeapons this;

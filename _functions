@@ -1,2 +1,5 @@
 # Register call for an item to open the Arsenal.
 0 = ["AmmoboxInit",[this,true]] spawn BIS_fnc_arsenal;
+
+# Open Arsenal via the console.
+["Open", true] spawn BIS_fnc_arsenal;
