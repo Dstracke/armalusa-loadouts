@@ -1,0 +1,40 @@
+comment "Exported from Arsenal by iisha. No NATO weapons mod required.";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_B_GhillieSuit";
+for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
+for "_i" from 1 to 3 do {this addItemToUniform "11Rnd_45ACP_Mag";};
+this addItemToUniform "7Rnd_408_Mag";
+this addItemToUniform "Laserbatteries";
+this addVest "V_TacVest_oli";
+this addItemToVest "optic_ACO_grn";
+for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
+for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
+for "_i" from 1 to 5 do {this addItemToVest "7Rnd_408_Mag";};
+this addHeadgear "H_HelmetB";
+
+comment "Add weapons";
+this addWeapon "srifle_LRR_F";
+this addPrimaryWeaponItem "optic_Nightstalker";
+this addWeapon "hgun_Pistol_heavy_01_F";
+this addHandgunItem "muzzle_snds_acp";
+this addHandgunItem "optic_MRD";
+this addWeapon "Laserdesignator";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "tf_anprc152_3";
+this linkItem "ItemGPS";
+this linkItem "NVGoggles_INDEP";
