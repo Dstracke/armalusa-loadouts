@@ -3,3 +3,9 @@
 
 # Open Arsenal via the console.
 ["Open", true] spawn BIS_fnc_arsenal;
+
+# Make AI units unable to move.
+this disableAI "MOVE";
+
+# Make AI units kneel
+this setUnitPos "MEDIUM";
