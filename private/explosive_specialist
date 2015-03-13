@@ -1,5 +1,3 @@
-comment "Exported from Arsenal by iisha";
-
 comment "Remove existing items";
 removeAllWeapons this;
 removeAllItems this;
@@ -26,6 +24,7 @@ this addBackpack "B_Carryall_mcamo";
 this addItemToBackpack "AGM_Clacker";
 this addItemToBackpack "AGM_DefusalKit";
 this addItemToBackpack "optic_ACO_grn";
+this addItemToBackpack "MineDetector";
 for "_i" from 1 to 2 do {this addItemToBackpack "SatchelCharge_Remote_Mag";};
 this addItemToBackpack "ClaymoreDirectionalMine_Remote_Mag";
 this addHeadgear "H_HelmetB";

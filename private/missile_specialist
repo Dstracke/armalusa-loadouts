@@ -1,5 +1,3 @@
-comment "Exported from Arsenal by iisha";
-
 comment "Remove existing items";
 removeAllWeapons this;
 removeAllItems this;
@@ -16,7 +14,6 @@ this addItemToUniform "AGM_EarBuds";
 this addItemToUniform "HandGrenade";
 this addItemToUniform "11Rnd_45ACP_Mag";
 this addItemToUniform "30Rnd_556x45_Stanag_Tracer_Red";
-this addItemToUniform "Laserbatteries";
 this addVest "V_PlateCarrierGL_rgr";
 for "_i" from 1 to 2 do {this addItemToVest "AGM_Bandage";};
 this addItemToVest "optic_Hamr";

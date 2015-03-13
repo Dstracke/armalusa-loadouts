@@ -1,5 +1,3 @@
-comment "Exported from Arsenal by iisha";
-
 comment "Remove existing items";
 removeAllWeapons this;
 removeAllItems this;
@@ -13,8 +11,8 @@ removeGoggles this;
 comment "Add containers";
 this forceAddUniform "U_Competitor";
 this addVest "V_Press_F";
-for "_i" from 1 to 2 do {this addItemToVest "40Rnd_mas_46x30_Mag";};
 this addItemToVest "11Rnd_45ACP_Mag";
+this addItemToVest "40Rnd_mas_46x30_Mag";
 this addItemToVest "Chemlight_green";
 this addItemToVest "Chemlight_red";
 this addItemToVest "SmokeShell";

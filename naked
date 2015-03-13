@@ -1,5 +1,3 @@
-comment "Exported from Arsenal by iisha. No NATO weapons mod required.";
-
 comment "Remove existing items";
 removeAllWeapons this;
 removeAllItems this;
@@ -12,8 +10,6 @@ removeGoggles this;
 
 comment "Add containers";
 this forceAddUniform "U_BG_Guerilla2_1";
-
-comment "Add weapons";
 
 comment "Add items";
 this linkItem "tf_anprc152_3";
