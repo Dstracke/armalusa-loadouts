@@ -1,5 +1,3 @@
-comment "Exported from Arsenal by iisha. No NATO weapons mod required.";
-
 comment "Remove existing items";
 removeAllWeapons this;
 removeAllItems this;
@@ -19,7 +17,6 @@ this addItemToVest "optic_ACO_grn";
 for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
 for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
 for "_i" from 1 to 6 do {this addItemToVest "10Rnd_762x51_Mag";};
-this addItemToVest "Laserbatteries";
 this addBackpack "B_AssaultPack_mcamo";
 this addHeadgear "H_HelmetB";
 
