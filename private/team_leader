@@ -42,6 +42,7 @@ this addWeapon "hgun_Pistol_heavy_01_F";
 this addHandgunItem "muzzle_snds_acp";
 this addHandgunItem "optic_MRD";
 this addWeapon "Laserdesignator";
+this addItemToBackpack "Laserbatteries";
 
 comment "Add items";
 this linkItem "ItemMap";

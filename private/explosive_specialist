@@ -31,6 +31,7 @@ this addItemToBackpack "H_PT_Helmet";
 for "_i" from 1 to 2 do {this addItemToBackpack "SatchelCharge_Remote_Mag";};
 this addItemToBackpack "ClaymoreDirectionalMine_Remote_Mag";
 this addHeadgear "H_PT_RBeret";
+this addItemToBackpack "Laserbatteries";
 
 comment "Add weapons";
 this addWeapon "arifle_mas_hk416";
