@@ -1,3 +1,5 @@
+comment "Exported from Arsenal by iisha_";
+
 comment "Remove existing items";
 removeAllWeapons this;
 removeAllItems this;
@@ -9,22 +11,23 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "U_B_CombatUniform_mcam_tshirt";
+this forceAddUniform "U_P_Uniform";
 for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
-for "_i" from 1 to 3 do {this addItemToUniform "11Rnd_45ACP_Mag";};
+for "_i" from 1 to 2 do {this addItemToUniform "11Rnd_45ACP_Mag";};
 this addVest "V_TacVest_oli";
 this addItemToVest "optic_ACO_grn";
-for "_i" from 1 to 3 do {this addItemToVest "30Rnd_65x39_caseless_mag";};
-for "_i" from 1 to 10 do {this addItemToVest "1Rnd_HE_Grenade_shell";};
+this addItemToVest "NVGoggles_INDEP";
+for "_i" from 1 to 2 do {this addItemToVest "30Rnd_65x39_caseless_mag";};
+for "_i" from 1 to 9 do {this addItemToVest "1Rnd_HE_Grenade_shell";};
 for "_i" from 1 to 3 do {this addItemToVest "SmokeShell";};
 this addItemToVest "Chemlight_green";
-this addBackpack "B_AssaultPack_mcamo";
+this addBackpack "B_AssaultPack_sgg";
 for "_i" from 1 to 5 do {this addItemToBackpack "30Rnd_65x39_caseless_mag";};
 for "_i" from 1 to 2 do {this addItemToBackpack "30Rnd_65x39_caseless_mag_Tracer";};
 this addItemToBackpack "B_IR_Grenade";
 for "_i" from 1 to 3 do {this addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
 for "_i" from 1 to 5 do {this addItemToBackpack "3Rnd_HE_Grenade_shell";};
-this addHeadgear "H_HelmetB";
+this addHeadgear "H_PT_Helmet";
 
 comment "Add weapons";
 this addWeapon "arifle_MX_GL_F";
@@ -42,4 +45,3 @@ this linkItem "ItemCompass";
 this linkItem "ItemWatch";
 this linkItem "tf_anprc152_2";
 this linkItem "ItemGPS";
-this linkItem "NVGoggles_INDEP";

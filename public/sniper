@@ -1,3 +1,5 @@
+comment "Exported from Arsenal by iisha_";
+
 comment "Remove existing items";
 removeAllWeapons this;
 removeAllItems this;
@@ -11,8 +13,7 @@ removeGoggles this;
 comment "Add containers";
 this forceAddUniform "U_B_GhillieSuit";
 for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
-for "_i" from 1 to 3 do {this addItemToUniform "11Rnd_45ACP_Mag";};
-this addItemToUniform "7Rnd_408_Mag";
+for "_i" from 1 to 2 do {this addItemToUniform "11Rnd_45ACP_Mag";};
 this addVest "V_TacVest_oli";
 this addItemToVest "optic_ACO_grn";
 for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};

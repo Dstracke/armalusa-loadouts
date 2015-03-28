@@ -1,3 +1,5 @@
+comment "Exported from Arsenal by iisha_";
+
 comment "Remove existing items";
 removeAllWeapons this;
 removeAllItems this;
@@ -9,16 +11,18 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "U_B_CombatUniform_mcam_tshirt";
+this forceAddUniform "PT_Rangersuit";
 for "_i" from 1 to 2 do {this addItemToUniform "FirstAidKit";};
-for "_i" from 1 to 3 do {this addItemToUniform "11Rnd_45ACP_Mag";};
+for "_i" from 1 to 2 do {this addItemToUniform "11Rnd_45ACP_Mag";};
 this addVest "V_TacVest_oli";
 this addItemToVest "optic_ACO_grn";
-for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
-for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
-for "_i" from 1 to 6 do {this addItemToVest "10Rnd_762x51_Mag";};
-this addBackpack "B_AssaultPack_mcamo";
-this addHeadgear "H_HelmetB";
+this addItemToVest "NVGoggles_INDEP";
+for "_i" from 1 to 5 do {this addItemToVest "10Rnd_762x51_Mag";};
+this addBackpack "B_AssaultPack_sgg";
+this addItemToBackpack "H_PT_Helmet";
+for "_i" from 1 to 2 do {this addItemToBackpack "SmokeShell";};
+for "_i" from 1 to 2 do {this addItemToBackpack "HandGrenade";};
+this addHeadgear "H_PT_RBeret";
 
 comment "Add weapons";
 this addWeapon "srifle_DMR_01_F";
@@ -35,4 +39,3 @@ this linkItem "ItemCompass";
 this linkItem "ItemWatch";
 this linkItem "tf_anprc152_3";
 this linkItem "ItemGPS";
-this linkItem "NVGoggles_INDEP";
