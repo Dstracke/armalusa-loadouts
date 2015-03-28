@@ -8,9 +8,11 @@ requeridos pela equipa. Estão à disposição de qualquer membro da Armalusa.
 ### Público
 
 * @task\_force\_radio
+* @PAFuniforms
 
 ### Privado / Treino
 
 * @agm
 * @NATO\_Russian\_SF\_Weapons
 * @task\_force\_radio
+* @PAFuniforms
