@@ -1,3 +1,5 @@
+comment "Exported from Arsenal by iisha_";
+
 comment "Remove existing items";
 removeAllWeapons this;
 removeAllItems this;
@@ -9,25 +11,26 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "U_B_CombatUniform_mcam_tshirt";
+this forceAddUniform "PT_Rangersuit";
 this addItemToUniform "AGM_EarBuds";
 this addItemToUniform "HandGrenade";
-this addItemToUniform "11Rnd_45ACP_Mag";
 this addItemToUniform "30Rnd_556x45_Stanag_Tracer_Red";
 this addVest "V_PlateCarrierGL_rgr";
 for "_i" from 1 to 2 do {this addItemToVest "AGM_Bandage";};
-for "_i" from 1 to 7 do {this addItemToVest "30Rnd_556x45_Stanag";};
+this addItemToVest "NVGoggles_INDEP";
+for "_i" from 1 to 6 do {this addItemToVest "30Rnd_556x45_Stanag";};
 for "_i" from 1 to 2 do {this addItemToVest "11Rnd_45ACP_Mag";};
 this addItemToVest "HandGrenade";
 for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
-this addBackpack "B_Carryall_mcamo";
+this addBackpack "B_Carryall_oli";
 this addItemToBackpack "AGM_Clacker";
 this addItemToBackpack "AGM_DefusalKit";
 this addItemToBackpack "optic_ACO_grn";
 this addItemToBackpack "MineDetector";
+this addItemToBackpack "H_PT_Helmet";
 for "_i" from 1 to 2 do {this addItemToBackpack "SatchelCharge_Remote_Mag";};
 this addItemToBackpack "ClaymoreDirectionalMine_Remote_Mag";
-this addHeadgear "H_HelmetB";
+this addHeadgear "H_PT_RBeret";
 
 comment "Add weapons";
 this addWeapon "arifle_mas_hk416";
@@ -45,4 +48,3 @@ this linkItem "ItemCompass";
 this linkItem "ItemWatch";
 this linkItem "tf_anprc152_6";
 this linkItem "ItemGPS";
-this linkItem "NVGoggles_INDEP";

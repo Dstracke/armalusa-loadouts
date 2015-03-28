@@ -1,3 +1,5 @@
+comment "Exported from Arsenal by iisha_";
+
 comment "Remove existing items";
 removeAllWeapons this;
 removeAllItems this;
@@ -9,22 +11,23 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "U_B_CombatUniform_mcam_tshirt";
+this forceAddUniform "U_P_Uniform";
 for "_i" from 1 to 2 do {this addItemToUniform "AGM_Bandage";};
-for "_i" from 1 to 3 do {this addItemToUniform "11Rnd_45ACP_Mag";};
+for "_i" from 1 to 2 do {this addItemToUniform "11Rnd_45ACP_Mag";};
 this addVest "V_TacVest_oli";
 this addItemToVest "optic_ACO_grn";
-for "_i" from 1 to 9 do {this addItemToVest "1Rnd_HE_Grenade_shell";};
+for "_i" from 1 to 8 do {this addItemToVest "1Rnd_HE_Grenade_shell";};
 for "_i" from 1 to 3 do {this addItemToVest "SmokeShell";};
 this addItemToVest "Chemlight_green";
-for "_i" from 1 to 5 do {this addItemToVest "30Rnd_mas_556x45_Stanag";};
-this addBackpack "B_AssaultPack_mcamo";
+for "_i" from 1 to 4 do {this addItemToVest "30Rnd_mas_556x45_Stanag";};
+this addBackpack "B_AssaultPack_sgg";
+this addItemToBackpack "NVGoggles_INDEP";
 this addItemToBackpack "B_IR_Grenade";
 for "_i" from 1 to 3 do {this addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
 for "_i" from 1 to 5 do {this addItemToBackpack "3Rnd_HE_Grenade_shell";};
 for "_i" from 1 to 3 do {this addItemToBackpack "30Rnd_mas_556x45_Stanag";};
 for "_i" from 1 to 2 do {this addItemToBackpack "30Rnd_mas_556x45_T_Stanag";};
-this addHeadgear "H_HelmetB";
+this addHeadgear "H_PT_Helmet";
 
 comment "Add weapons";
 this addWeapon "arifle_mas_hk416_gl";
@@ -42,4 +45,3 @@ this linkItem "ItemCompass";
 this linkItem "ItemWatch";
 this linkItem "tf_anprc152_2";
 this linkItem "ItemGPS";
-this linkItem "NVGoggles_INDEP";
